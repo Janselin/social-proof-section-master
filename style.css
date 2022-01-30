@@ -1,35 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
 
-/*  Weights: 400, 500, 700 
-Very Dark Magenta: hsl(300, 43%, 22%)
-Soft Pink: hsl(333, 80%, 67%)
-
-### Neutral
-
-Dark Grayish Magenta: hsl(303, 10%, 53%)
-Light Grayish Magenta: hsl(300, 24%, 96%)
-White: hsl(0, 0%, 100%)
-*/
 
 .body {
    
-font: 0.9375em 'Spartan', sans-serif;
-   
-  
+font: 0.9375em 'Spartan', sans-serif;  
 height: 100vh;
-display: flex;
-   
+display: flex;   
 flex-direction: column;
-align-items: center;
-   
-line-height: 20px;
-   
-background-color: hsl(0, 0%, 100%);
-   
+align-items: center;   
+line-height: 20px;   
+background-color: hsl(0, 0%, 100%);   
 background-image: url(./images/bg-pattern-top-desktop.svg), 
-                      url(./images/bg-pattern-bottom-desktop.svg);
-   
-background-repeat: no-repeat no-repeat;
+                   url(./images/bg-pattern-bottom-desktop.svg) no-repeat no-repeat;  
+
 }
 
 .main {
@@ -69,20 +52,6 @@ background-repeat: no-repeat no-repeat;
     
 }
 
-.header__starIcon{
-
-vertical-align: middle;
-display: inline-block;
-color: #EF9746;
-padding: 4px;
-}
-
-.header__starIcon:last-child {
-    margin-right: 22px;
-}
-.header__starIcon:first-child {
-    margin-left: 23px;
-}
 .header__stars {
     background-color: hsl(300, 24%, 96%);
     margin: 1.5em 0 0 -2em;
@@ -95,6 +64,20 @@ padding: 4px;
     align-items: center;
    
 }
+.header__starIcon{
+
+vertical-align: middle;
+display: inline-block;
+padding: 4px;
+}
+
+.header__starIcon:last-child {
+    margin-right: 22px;
+}
+.header__starIcon:first-child {
+    margin-left: 23px;
+}
+
 
 .header__stars--second {
     margin-left: 3em;
@@ -107,7 +90,7 @@ padding: 4px;
 .section {
     display: flex;
     justify-content: space-between;
-    padding: 1.3em 0;
+    padding: 1.3em auto;
     align-items: flex-start;
 }
 .card {
@@ -132,7 +115,7 @@ padding: 4px;
     align-content: center;
     align-items: center;
     justify-content: flex-start;
-      margin-bottom: 29px;
+    margin-bottom: 29px;
 }
 
 .card__photo {
@@ -158,13 +141,6 @@ padding: 4px;
 }
 
 
-
-
-
-
-
-
-
 .footer {    
     font-size: 0.6875em;
     text-align: center;
@@ -179,8 +155,11 @@ padding: 4px;
 
 
 
+@media screen and (max-width:1183px) {
 
-@media screen and (max-width:760px) {
+.body {
+    background: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg) no-repeat no-repeat;
+}
 
 
 .header, 
@@ -190,15 +169,14 @@ padding: 4px;
     flex-direction: column;
     align-items: center;
     width: 96%;
-    height: auto;
-    
+    height: auto;    
 }
 
 .section {
     margin: 2em 0;
-    padding: 0;
-  
+    padding: 0;  
 }
+
 .header__box {
     width: 100%;
     padding: 0;
@@ -226,18 +204,4 @@ padding: 4px;
 }
 
 
-/* .card {
-       width: inherit;
-} */
-}
-
-
-
-/* @media screen and (min-width:481px) and (max-width: 760px) {
-
-} */
-
-@media screen and (min-width: 1440px) {
-
-}
-
+ }
